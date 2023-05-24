@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="SD指南">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="如何生成超级清晰的图片（AI upscaler改善图像细节）"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="StableDiffussion"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>如何生成超级清晰的图片（AI upscaler改善图像细节） - StableDiffussion</title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/reset.css">
+
+    
+<link rel="stylesheet" href="/css/main.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!--Favicon-->
+    
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">StableDiffussion</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+            
+                <li><a href="https://www.facebook.com/" class="fb" target="_blank" data-title="Facebook"></a></li>
+            
+            
+                <li><a href="https://www.behance.net/" class="behance" target="_blank" data-title="Behance"></a></li>
+            
+            
+                <li><a href="https://plus.google.com/+Pixelhint/posts" class="google" target="_blank" data-title="Google+"></a></li>
+            
+            
+                <li><a href="https://dribbble.com/pixelhint" class="dribble" target="_blank" data-title="Dribble"></a></li>
+            
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2014 magnetic.</p>
+            <p>Template by <a target="_blank" rel="noopener" href="http://pixelhint.com/magnetic-free-html5-responsive-photography-website-template/">Pixelhint.com</a></p>
+            <p>Hexo Theme by <a target="_blank" rel="noopener" href="http://www.codeblocq.com/">Jonathan K.</a></p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://placehold.it/1300x500');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a class="previous disabled"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2023/05/24/hello-world/" class="next" data-title="Hello World"></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">如何生成超级清晰的图片（AI upscaler改善图像细节）</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <p>像 ESRGAN 这样的 Image AI upscaler 是提高 Stable Diffusion 生成的图像质量不可或缺的工具。事实上，它是如此常用，以至于许多 Stable Diffusion GUI 都内置了对它的支持。</p>
+<p>在这里，我们将了解什么是图像升频器、它们如何工作以及如何使用它们。</p>
+<h2 id="快速指南"><a href="#快速指南" class="headerlink" title="快速指南"></a>快速指南</h2><p>为什么我们需要图像升频器？</p>
+<p>为什么我们不能使用传统的升频器？</p>
+<p>AI 升级器如何工作？</p>
+<p>如何使用AI upscaler进行稳定扩散？</p>
+<p>AI 升级器选项</p>
+<p>激光雷达 ESRGAN 4x R-ESRGAN 4x</p>
+<p>其他选项</p>
+<p>安装新的升频器</p>
+<p>放大图像的示例</p>
+<p>使用 SD upscale 增强细节</p>
+<p>雇用修复 txt2img 页面</p>
+<h3 id="为什么我们需要图像升频器？"><a href="#为什么我们需要图像升频器？" class="headerlink" title="为什么我们需要图像升频器？"></a>为什么我们需要图像升频器？</h3><p>Stable Diffusion v1 的默认图像大小为512×512 像素。这在今天的标准中是相当低的。 我们以iPhone 12为例。它的相机可生成 12 MP 图像——即 4,032 × 3,024 像素。它的屏幕显示 2,532 x 1,170 像素，因此需要放大未缩放的 Stable Diffusion 图像并且看起来质量很差。</p>
+<p>更复杂的是，稳定扩散生成的复杂场景通常不如应有的清晰。它经常在细节上挣扎。</p>
+<h3 id="为什么我们不能使用传统的升频器？"><a href="#为什么我们不能使用传统的升频器？" class="headerlink" title="为什么我们不能使用传统的升频器？"></a>为什么我们不能使用传统的升频器？</h3><p>可以，但结果不会那么好。</p>
+<p>用于调整图像大小的传统算法，例如最近邻插值法和Lanczos插值法，因仅使用图像的像素值而受到批评。他们通过仅使用图像的像素值执行数学运算来扩大画布并填充新像素。然而，如果图像本身被损坏或扭曲，这些算法就无法准确地填充缺失的信息。</p>
+<h3 id="AI-升级器如何工作？"><a href="#AI-升级器如何工作？" class="headerlink" title="AI 升级器如何工作？"></a>AI 升级器如何工作？</h3><p>相比之下，AI upscalers 是用大量数据训练的模型。</p>
+<p>高质量的图像首先被人为破坏以模拟真实世界的退化。然后将退化的图像缩小到更小的尺寸。然后训练神经网络模型以恢复原始图像。</p>
+<p>模型中嵌入了大量先验知识。它能够填补缺失的信息。就像人类不需要非常详细地研究一个人的脸来记住它一样。我们主要关注几个关键特性。</p>
+<p>下面是一个比较传统 (Lanczos) 和 AI (R-ESRGAN) 升频器的例子。由于嵌 入在 AI 放大器中的知识，它可以在放大图像的同时恢复细节。</p>
+<h3 id="如何使用AI-upscaler进行稳定扩散？"><a href="#如何使用AI-upscaler进行稳定扩散？" class="headerlink" title="如何使用AI upscaler进行稳定扩散？"></a>如何使用AI upscaler进行稳定扩散？</h3><p>我们将介绍如何使用 AUTOMATIC1111 GUI 实现稳定扩散的 AI 升频器。<br>转到 Extras 选项卡（我知道这个名字很容易混淆），然后选择Single Image。<br>将要放大的图像上传到源画布。</p>
+<p>设置调整大小因子。很多 AI upscaler 默认是 upscaling 4 倍，所以 4 是个不错的选择。如果您不希望图像那么大，请将其设置为较低的值，如 2。</p>
+<p>如果您的图像是 512×512 像素，调整大小 2x 是 1024×1024 像素，4x 是 2048×2048 像素。<br>选择R-ESRGAN 4x+，这是一种适用于大多数图像的 AI 升频器。</p>
+<p>按生成开始放大。</p>
+<p>完成后，放大后的图像将出现在右侧的输出窗口中。右键单击图像以保存。</p>
+<h3 id="AI-升级器选项"><a href="#AI-升级器选项" class="headerlink" title="AI 升级器选项"></a>AI 升级器选项</h3><p>我将介绍一些值得注意的选项。</p>
+<h3 id="激光雷达"><a href="#激光雷达" class="headerlink" title="激光雷达"></a>激光雷达</h3><p>Latent Diffusion Super Resolution (LDSR) 升频器最初与Stable Diffusion 1.4一起发布。它是一种经过训练以执行升级任务的潜在扩散模型。</p>
+<p>虽然提供卓越的质量，但速度非常慢。我不会推荐它。</p>
+<h3 id="埃斯甘-4x"><a href="#埃斯甘-4x" class="headerlink" title="埃斯甘 4x"></a>埃斯甘 4x</h3><p>增强型超分辨率生成对抗网络( ESRGAN ) 是一个升级网络，已赢得 2018 年感知图像恢复和操纵挑战。它是对之前SRGAN模型的增强。</p>
+<p>它倾向于保留精细的细节并产生清晰锐利的图像。</p>
+<h3 id="R-ESRGAN-4x"><a href="#R-ESRGAN-4x" class="headerlink" title="R-ESRGAN 4x"></a>R-ESRGAN 4x</h3><p>Real -ESRGAN ( R-ESRGAN ) 是对 ESRGAN 的增强，可以还原各种真实世界的图像。它对相机镜头和数字压缩造成的不同程度的失真进行建模。</p>
+<p>与 ESRGAN 相比，它倾向于生成更平滑的图像。</p>
+<p>R-ESRGAN 在处理逼真的照片图像时表现最佳。</p>
+<h3 id="其他选项"><a href="#其他选项" class="headerlink" title="其他选项"></a>其他选项</h3><p>这篇文章中有一个很好的比较来检查其他选项。</p>
+<p>R-ESRAGN 是照片或写实绘画的不错选择。动漫图像需要经过专门训练以恢复动漫的升级器。</p>
+<p>访问Upscaler 模型数据库以下载其他 upscaler。</p>
+<h3 id="安装新的升频器"><a href="#安装新的升频器" class="headerlink" title="安装新的升频器"></a>安装新的升频器</h3><p>要在 AUTOMATIC1111 GUI 中安装新的升频器，请从升频器模型数据库下载模型并将其放入文件夹中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stable-diffusion-webui/models/ESRGAN</span><br></pre></td></tr></table></figure>
+<p>重新启动图形用户界面。您的升频器现在应该可供选择。以下是您在安装 Universal Upscaler V2 后应该看到的内容。<br>以下模型是很好的通用升频器。</p>
+<p>通用升级器 v2<br>雷马克里<br>NMKD 西亚克斯<br>棒棒糖</p>
+<h3 id="放大图像的示例"><a href="#放大图像的示例" class="headerlink" title="放大图像的示例"></a>放大图像的示例</h3><p>下面是使用 R-ESRGAN 放大的复杂场景示例。放大并在它们之间切换以观察差异。在电脑和手机屏幕上比较它们，看看有什么不同</p>
+<h3 id="使用-SD-upscale-增强细节"><a href="#使用-SD-upscale-增强细节" class="headerlink" title="使用 SD upscale 增强细节"></a>使用 SD upscale 增强细节</h3><p>单独使用升频器并不理想。如果您手头有稳定的扩散，为什么不将其添加到您的升级器工作流程中呢？</p>
+<p>SD Upscale是 AUTOMATIC1111 附带的脚本，它使用放大器执行放大，然后是图像到图像以增强细节。</p>
+<p>步骤 1.导航到Img2img页面。</p>
+<p>第 2 步。将图像上传到 img2img 画布。</p>
+<p>（或者，使用发送到 Img2img按钮将图像发送到 img2img 画布）</p>
+<p>第 3 步。在底部的脚本下拉菜单中，选择SD Upscale。</p>
+<p>步骤 4.将比例因子设置为 4 以缩放到原始大小的 4 倍。</p>
+<p>步骤 5.将去噪强度设置为 0.1 到 0.3 之间。它越高，图像变化越大。（你应该试验一下）</p>
+<p>步骤 6.将采样步数设置为 100。更高的步数可以改善细节。（你应该试验一下）</p>
+<p>第 7 步。 您可以使用原始提示和否定提示。如果您没有，请使用“非常详细”作为提示。</p>
+<p>步骤 8. 按生成。</p>
+<p>下面是使用 SD Upscale 脚本添加额外的图像到图像的比较。</p>
+<p>左：Universal Upscaler v2 到 4x。<br>右图：使用 Universal Upscaler v2 到 4x 的 SD Upscale，提示“非常详细”，降噪强度 0.3 和 100 个采样步骤。<br>SD Upscale 脚本有助于改善细节并减少放大伪像。</p>
+<h3 id="雇用修复-txt2img-页面"><a href="#雇用修复-txt2img-页面" class="headerlink" title="雇用修复 txt2img 页面"></a>雇用修复 txt2img 页面</h3><p>您可以选择放大 txt2img 页面上生成的每个图像。为此，您只需检查Hires。修复。</p>
+<p>其他选项将出现在复选框下方。这些选项类似于使用SD Upscale脚本的选项。</p>
+<p>就个人而言，我不太使用 Hires fix，因为它会减慢图像生成速度。与其放大所有图像，我宁愿只放大我要保留的图像。</p>
+<p>看到好的图像后，您可以将其发送到 img2img 以进行标清放大。</p>
+<p>了解用于稳定扩散的新升级方法：ControlNet Tile Upscale。</p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+
+<script src="/js/jquery.js"></script>
+
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
